@@ -1,5 +1,5 @@
 // Dalam index.js atau file terpisah
-app.post("/register-service-worker", (req, res) => {
+app.post("/service_work.js", (req, res) => {
   // Endpoint untuk registrasi service worker
 });
 
