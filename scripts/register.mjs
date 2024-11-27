@@ -25,7 +25,7 @@ button.onclick = async () => {
         email: arr.find(el => el.name == "register-email").value,
         fakultas: arr.find(el => el.name == "register-fakultas").value,
         studi: arr.find(el => el.name == "register-studi").value,
-        photo
+        photo: arr.find(el => el.name == "register-photo").value
     }
 
     try {
