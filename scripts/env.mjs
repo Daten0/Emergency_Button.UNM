@@ -1,13 +1,13 @@
 export const FIREBASE_CONFIG = {
-    apiKey: "AIzaSyDEgg3y6TAupxFpSFLSzmR1bQrscUAA1Js",
-    authDomain: "inotek-cce02.firebaseapp.com",
-    projectId: "inotek-cce02",
-    storageBucket: "inotek-cce02.firebasestorage.app",
-    messagingSenderId: "164086902668",
-    appId: "1:164086902668:web:c204bde0d48e5e49f070a9"
+    apiKey: "API_KEY_SECRET",
+    authDomain: "AUTH_DOMAIN_SECRET",
+    projectId: "PROJECT_ID_SECRET",
+    storageBucket: "STORAGE_BUCKET_SECRET",
+    messagingSenderId: "MESS_SENDER_ID",
+    appId: "APP_ID_SECRET"
 }
 
 export const TELEGRAM_CONFIG = {
-    token: "8130533536:AAEVLOdUAgEtEphyWdakqQGeqiUcLfPvQ4k",
-    chat_id: "967982145"
+    token: "TELE_TOKEN",
+    chat_id: "CHAT_ID"
 }
