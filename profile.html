@@ -1,0 +1,19 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</body>
+
+<script type="module">
+    import env from "./scripts/njk.mjs";
+    import { getInformation, getCurrentUser } from "./scripts/firebase.mjs";
+    import { setInnerHTML } from "./scripts/njk.mjs";
+
+    getInformation(getCurrentUser().uid)
+    .then(information => {
+        env.render("profile.njk", { information }, (err, html) => setInnerHTML(document.documentElement, html));
+    });
+</script>

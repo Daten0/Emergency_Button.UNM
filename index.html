@@ -1,0 +1,6 @@
+<script type="module">
+    import env from "./scripts/njk.mjs";
+    import { setInnerHTML } from "./scripts/njk.mjs";
+
+    env.render("index.njk", { noDummy: true }, (err, html) => setInnerHTML(document.documentElement, html));
+</script>
