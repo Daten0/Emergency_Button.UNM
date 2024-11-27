@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "description": "Website panic button untuk mempermudah pencarian mahasiswa/mahasiswi yang dalam bahaya",
   "main": "index.mjs",
+  "engines": {
+  "node": "22.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.mjs",
+    "test": "npm start"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^11.0.2"
+    "@firebase/app": "^0.10.16",
+    "@firebase/auth": "^1.8.1",
+    "@firebase/firestore": "^4.7.5",
+    "@vercel/node": "^3.2.27",
+    "firebase": "^11.0.2",
+    "nunjucks": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0"
   }
 }
