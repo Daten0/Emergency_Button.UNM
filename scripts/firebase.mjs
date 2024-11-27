@@ -5,10 +5,10 @@ import {
     getAuth,
     onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
-import { FIREBASE_CONFIG } from "./env.mjs";
+import { firebaseConfig } from "./env.mjs";
 
 // Initialize Firebase
-export const app = initializeApp(FIREBASE_CONFIG);
+export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const firestore = getFirestore(app);
 
