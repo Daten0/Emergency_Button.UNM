@@ -1,13 +1,13 @@
 export const FIREBASE_CONFIG = {
-    apiKey: "API_KEY_SECRET",
-    authDomain: "AUTH_DOMAIN_SECRET",
-    projectId: "PROJECT_ID_SECRET",
-    storageBucket: "STORAGE_BUCKET_SECRET",
-    messagingSenderId: "MESS_SENDER_ID",
-    appId: "APP_ID_SECRET"
+    apiKey: "FIREBASE_API_KEY",
+    authDomain: "FIREBASE_AUTH_DOMAIN",
+    projectId: "FIREBASE_PROJECT_ID",
+    storageBucket: "FIREBASE_STORAGE_BUCKET",
+    messagingSenderId: "FIREBASE_MESSAGING_SENDER_ID",
+    appId: "FIREBASE_APP_ID"
 }
 
 export const TELEGRAM_CONFIG = {
-    token: "TELE_TOKEN",
-    chat_id: "CHAT_ID"
+    token: "TELEGRAM_BOT_TOKEN",
+    chat_id: "TELEGRAM_CHAT_ID"
 }
