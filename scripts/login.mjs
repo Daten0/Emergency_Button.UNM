@@ -18,8 +18,8 @@ loginBtn.onclick = async function() {
         await signInWithEmailAndPassword(auth, email.value, password.value);
     } catch (error) {
         loginBtn.innerHTML = "Masuk";
-        console.error(error);
-        showLoginError();
+        console.error("Login failed:", error.code, error.message);
+        showLoginError(error.message);
     }
 }
 
@@ -29,9 +29,11 @@ loginBtn.onclick = async function() {
 const showLoginError = (message) => {
     /** @type {HTMLDivElement} */
     const error = document.querySelector(".alert");
-
-    if (message) error.innerText = message;
-    else error.innerText = "Email atau kata sandi salah.";
+    if (message) {
+        error.innerText = message;
+    } else {
+        error.innerText = "Email atau kata sandi salah.";
+    }
 
     error.classList.remove("d-none");
 }
